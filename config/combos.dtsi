@@ -20,6 +20,8 @@
 #define HRC_DOT   &hmr_dot_lt RS(LCTRL) 0
 #define HRC_COMMA   &hmr_comma_gt LA(LCTRL) 0
 
+ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
 /* Horizontal combos - left hand */
 ZMK_COMBO(space, &kp SPACE,     LB3 LB2      DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(ret,   &kp RETURN,    LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
