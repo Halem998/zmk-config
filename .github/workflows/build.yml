@@ -1,7 +1,10 @@
-
-
-on: [push, pull_request, workflow_dispatch]
-
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      path: /__w/zmk-config/zmk-config/modules/
+      key: Linux-build-cache-zephyr-3.5.0-modules-<NEW_HASH>
+      restore-keys: Linux-build-cache-zephyr-3.5.0-modules-
+      enableCrossOsArchive: false
+      fail-on-cache-miss: true
+
