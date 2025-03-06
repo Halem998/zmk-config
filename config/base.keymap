@@ -232,6 +232,11 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
 
+
+
+ keymap {
+        compatible = "zmk,keymap";
+
     base layer { 
         binding = <
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
@@ -332,6 +337,5 @@ ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
 >;
 };
 
+};
 
-
-/* vim: set ft=c tw=174: */
