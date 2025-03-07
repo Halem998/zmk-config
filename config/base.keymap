@@ -17,6 +17,7 @@
 #define NUM 3
 #define SYS 4
 #define SYM 5
+#define UC 6
 
 #include "combos.dtsi"  // requires layer aliases
 #include "extra_keys.h"
